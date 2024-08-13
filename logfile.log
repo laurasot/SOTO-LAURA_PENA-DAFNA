@@ -1,0 +1,78 @@
+[2024-08-12 20:54:53] [ ERROR] [OdontologoServiceTest:30] [crearTablas] Error de Sintaxis en sentencia SQL "\000d\000a\000d\000aCREATE TABLE ODONTOLOGOS(\000d\000a                             ID INT AUTO_INCREMENT PRIMARY KEY,\000d\000a                             MATRICULA VARCHAR NOT NULL,\000d\000a                             NOMBRE VARCHAR NOT NULL,\000d\000a                             APELLIDO VARCHAR NOT NULL,\000d\000a\000d\000a\000d\000a[*])"; se esperaba "identifier"
+Syntax error in SQL statement "\000d\000a\000d\000aCREATE TABLE ODONTOLOGOS(\000d\000a                             ID INT AUTO_INCREMENT PRIMARY KEY,\000d\000a                             MATRICULA VARCHAR NOT NULL,\000d\000a                             NOMBRE VARCHAR NOT NULL,\000d\000a                             APELLIDO VARCHAR NOT NULL,\000d\000a\000d\000a\000d\000a[*])"; expected "identifier"; SQL statement:
+
+
+CREATE TABLE ODONTOLOGOS(
+                             ID INT AUTO_INCREMENT PRIMARY KEY,
+                             MATRICULA VARCHAR NOT NULL,
+                             NOMBRE VARCHAR NOT NULL,
+                             APELLIDO VARCHAR NOT NULL,
+
+
+) [42001-230]
+[2024-08-12 20:57:23] [ ERROR] [OdontologoServiceTest:30] [crearTablas] Error de Sintaxis en sentencia SQL "\000d\000a\000d\000aCREATE TABLE ODONTOLOGOS(\000d\000a                             ID INT AUTO_INCREMENT PRIMARY KEY,\000d\000a                             MATRICULA VARCHAR NOT NULL,\000d\000a                             NOMBRE VARCHAR NOT NULL,\000d\000a                             APELLIDO VARCHAR NOT NULL,\000d\000a\000d\000a[*])"; se esperaba "identifier"
+Syntax error in SQL statement "\000d\000a\000d\000aCREATE TABLE ODONTOLOGOS(\000d\000a                             ID INT AUTO_INCREMENT PRIMARY KEY,\000d\000a                             MATRICULA VARCHAR NOT NULL,\000d\000a                             NOMBRE VARCHAR NOT NULL,\000d\000a                             APELLIDO VARCHAR NOT NULL,\000d\000a\000d\000a[*])"; expected "identifier"; SQL statement:
+
+
+CREATE TABLE ODONTOLOGOS(
+                             ID INT AUTO_INCREMENT PRIMARY KEY,
+                             MATRICULA VARCHAR NOT NULL,
+                             NOMBRE VARCHAR NOT NULL,
+                             APELLIDO VARCHAR NOT NULL,
+
+) [42001-230]
+[2024-08-12 20:58:17] [ ERROR] [OdontologoServiceTest:30] [crearTablas] Error de Sintaxis en sentencia SQL "\000d\000a\000d\000aCREATE TABLE ODONTOLOGOS(\000d\000a                             ID INT AUTO_INCREMENT PRIMARY KEY,\000d\000a                             MATRICULA VARCHAR(50) NOT NULL,\000d\000a                             NOMBRE VARCHAR(50) NOT NULL,\000d\000a                             APELLIDO VARCHAR(50) NOT NULL,\000d\000a\000d\000a[*])"; se esperaba "identifier"
+Syntax error in SQL statement "\000d\000a\000d\000aCREATE TABLE ODONTOLOGOS(\000d\000a                             ID INT AUTO_INCREMENT PRIMARY KEY,\000d\000a                             MATRICULA VARCHAR(50) NOT NULL,\000d\000a                             NOMBRE VARCHAR(50) NOT NULL,\000d\000a                             APELLIDO VARCHAR(50) NOT NULL,\000d\000a\000d\000a[*])"; expected "identifier"; SQL statement:
+
+
+CREATE TABLE ODONTOLOGOS(
+                             ID INT AUTO_INCREMENT PRIMARY KEY,
+                             MATRICULA VARCHAR(50) NOT NULL,
+                             NOMBRE VARCHAR(50) NOT NULL,
+                             APELLIDO VARCHAR(50) NOT NULL,
+
+) [42001-230]
+[2024-08-12 21:00:52] [ ERROR] [DaoH2Odontologo:53] [guardar] Table "ODONTOLOGOS" not found (this database is empty); SQL statement:
+INSERT INTO ODONTOLOGOS VALUES(DEFAULT,?,?,?) [42104-230]
+[2024-08-12 21:04:47] [ ERROR] [DaoH2Odontologo:53] [guardar] Table "ODONTOLOGOS" not found (this database is empty); SQL statement:
+INSERT INTO ODONTOLOGOS VALUES(DEFAULT,?,?,?) [42104-230]
+[2024-08-12 21:06:07] [ INFO ] [DaoH2Odontologo:37] [guardar] Odontologo persistido model.Odontologo@3e2055d6
+[2024-08-12 21:11:14] [ INFO ] [DaoH2Odontologo:37] [guardar] Odontologo persistido model.Odontologo@6cc4cdb9
+[2024-08-12 21:11:14] [ INFO ] [DaoH2Odontologo:85] [buscarTodos] odontologomodel.Odontologo@102cec62
+[2024-08-12 21:12:08] [ INFO ] [DaoH2Odontologo:37] [guardar] Odontologo persistido Odontologo{id=2, matricula='asdas', nombre='Juan', apellido='SANCHEZ'}
+[2024-08-12 21:12:08] [ INFO ] [DaoH2Odontologo:85] [buscarTodos] odontologoOdontologo{id=2, matricula='asdas', nombre='Juan', apellido='SANCHEZ'}
+[2024-08-12 21:13:34] [ INFO ] [DaoH2Odontologo:37] [guardar] Odontologo persistido Odontologo{id=2, matricula='asdas', nombre='Juan', apellido='SANCHEZ'}
+[2024-08-12 21:13:34] [ INFO ] [DaoH2Odontologo:37] [guardar] Odontologo persistido Odontologo{id=3, matricula='asdas', nombre='Juan', apellido='SANCHEZ'}
+[2024-08-12 21:13:35] [ INFO ] [DaoH2Odontologo:37] [guardar] Odontologo persistido Odontologo{id=4, matricula='SKJAKS', nombre='Juana', apellido='PEREZ'}
+[2024-08-12 21:13:35] [ INFO ] [DaoH2Odontologo:37] [guardar] Odontologo persistido Odontologo{id=5, matricula='ASJKAJSK', nombre='Juanita', apellido='FERNANDEZ'}
+[2024-08-12 21:13:35] [ INFO ] [DaoH2Odontologo:85] [buscarTodos] odontologoOdontologo{id=5, matricula='ASJKAJSK', nombre='Juanita', apellido='FERNANDEZ'}
+[2024-08-12 21:15:01] [ INFO ] [DaoH2Odontologo:37] [guardar] Odontologo persistido Odontologo{id=2, matricula='asdas', nombre='Juan', apellido='SANCHEZ'}
+[2024-08-12 21:15:01] [ INFO ] [DaoH2Odontologo:37] [guardar] Odontologo persistido Odontologo{id=3, matricula='asdas', nombre='Juan', apellido='SANCHEZ'}
+[2024-08-12 21:15:01] [ INFO ] [DaoH2Odontologo:37] [guardar] Odontologo persistido Odontologo{id=4, matricula='SKJAKS', nombre='Juana', apellido='PEREZ'}
+[2024-08-12 21:15:01] [ INFO ] [DaoH2Odontologo:37] [guardar] Odontologo persistido Odontologo{id=5, matricula='ASJKAJSK', nombre='Juanita', apellido='FERNANDEZ'}
+[2024-08-12 21:15:01] [ INFO ] [DaoH2Odontologo:84] [buscarTodos] odontologoOdontologo{id=1, matricula='AABBCC', nombre='PEDRITO', apellido='PEREZ'}
+[2024-08-12 21:15:01] [ INFO ] [DaoH2Odontologo:84] [buscarTodos] odontologoOdontologo{id=2, matricula='asdas', nombre='Juan', apellido='SANCHEZ'}
+[2024-08-12 21:15:01] [ INFO ] [DaoH2Odontologo:84] [buscarTodos] odontologoOdontologo{id=3, matricula='asdas', nombre='Juan', apellido='SANCHEZ'}
+[2024-08-12 21:15:01] [ INFO ] [DaoH2Odontologo:84] [buscarTodos] odontologoOdontologo{id=4, matricula='SKJAKS', nombre='Juana', apellido='PEREZ'}
+[2024-08-12 21:15:01] [ INFO ] [DaoH2Odontologo:84] [buscarTodos] odontologoOdontologo{id=5, matricula='ASJKAJSK', nombre='Juanita', apellido='FERNANDEZ'}
+[2024-08-12 21:19:27] [ INFO ] [DaoH2Odontologo:37] [guardar] Odontologo persistido Odontologo{id=2, matricula='asdas', nombre='Juan', apellido='SANCHEZ'}
+[2024-08-12 21:19:27] [ INFO ] [DaoH2Odontologo:37] [guardar] Odontologo persistido Odontologo{id=3, matricula='asdas', nombre='Juan', apellido='SANCHEZ'}
+[2024-08-12 21:19:28] [ INFO ] [DaoH2Odontologo:37] [guardar] Odontologo persistido Odontologo{id=4, matricula='SKJAKS', nombre='Juana', apellido='PEREZ'}
+[2024-08-12 21:19:28] [ INFO ] [DaoH2Odontologo:37] [guardar] Odontologo persistido Odontologo{id=5, matricula='ASJKAJSK', nombre='Juanita', apellido='FERNANDEZ'}
+[2024-08-12 21:19:28] [ INFO ] [DaoH2Odontologo:84] [buscarTodos] odontologoOdontologo{id=1, matricula='AABBCC', nombre='PEDRITO', apellido='PEREZ'}
+[2024-08-12 21:19:28] [ INFO ] [DaoH2Odontologo:84] [buscarTodos] odontologoOdontologo{id=2, matricula='asdas', nombre='Juan', apellido='SANCHEZ'}
+[2024-08-12 21:19:28] [ INFO ] [DaoH2Odontologo:84] [buscarTodos] odontologoOdontologo{id=3, matricula='asdas', nombre='Juan', apellido='SANCHEZ'}
+[2024-08-12 21:19:28] [ INFO ] [DaoH2Odontologo:84] [buscarTodos] odontologoOdontologo{id=4, matricula='SKJAKS', nombre='Juana', apellido='PEREZ'}
+[2024-08-12 21:19:28] [ INFO ] [DaoH2Odontologo:84] [buscarTodos] odontologoOdontologo{id=5, matricula='ASJKAJSK', nombre='Juanita', apellido='FERNANDEZ'}
+[2024-08-12 21:19:28] [ INFO ] [OdontologoServiceTest:74] [caso2] El odontologo se llamaPEDRITO
+[2024-08-12 21:19:28] [ INFO ] [OdontologoServiceTest:74] [caso2] El odontologo se llamaJuan
+[2024-08-12 21:19:28] [ INFO ] [OdontologoServiceTest:74] [caso2] El odontologo se llamaJuan
+[2024-08-12 21:19:28] [ INFO ] [OdontologoServiceTest:74] [caso2] El odontologo se llamaJuana
+[2024-08-12 21:19:28] [ INFO ] [OdontologoServiceTest:74] [caso2] El odontologo se llamaJuanita
+[2024-08-12 21:26:32] [ INFO ] [DaoEnMemoria:18] [guardar] Odontologo guardado en memoria Odontologo{id=1, matricula='asdas', nombre='Juan', apellido='SANCHEZ'}
+[2024-08-12 21:29:03] [ INFO ] [DaoEnMemoria:18] [guardar] Odontologo guardado en memoria Odontologo{id=1, matricula='asdas', nombre='Juan', apellido='SANCHEZ'}
+[2024-08-12 21:29:03] [ INFO ] [DaoEnMemoria:18] [guardar] Odontologo guardado en memoria Odontologo{id=2, matricula='SKJAKS', nombre='Juana', apellido='PEREZ'}
+[2024-08-12 21:29:03] [ INFO ] [DaoEnMemoria:18] [guardar] Odontologo guardado en memoria Odontologo{id=3, matricula='ASJKAJSK', nombre='Juanita', apellido='FERNANDEZ'}
+[2024-08-12 21:29:03] [ INFO ] [OdontologoServiceTest:111] [caso4] El odontologo se llama Juan
+[2024-08-12 21:29:03] [ INFO ] [OdontologoServiceTest:111] [caso4] El odontologo se llama Juana
+[2024-08-12 21:29:03] [ INFO ] [OdontologoServiceTest:111] [caso4] El odontologo se llama Juanita
